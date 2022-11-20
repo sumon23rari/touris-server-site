@@ -72,6 +72,10 @@ async function run(){
         const result=await orderCollection.insertOne(orderd)
         res.send(result)
     });
+    // 
+    app.get('/',async(req,res)=>{
+        res.send('tourism based web site')
+    })
     }
     finally{
         //await client.close()
